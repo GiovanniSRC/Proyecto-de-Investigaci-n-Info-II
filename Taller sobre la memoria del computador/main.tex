@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+\usepackage{enumerate}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Taller sobre la memoria del computador}
+            
+        \vspace{0.5cm}
+        \LARGE
+            
+        \vspace{4.5cm}
+            
+        \textbf{Giovanni Smith Romaña Cuesta}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Septiembre de 2020
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\section{Definición de memoria}
+La memoria se puede definir como aquella parte del computador que junto con el microprocesador se encargan del correcto funcionamiento de la máquina.La función de la memoria es almacenar información que más adelante será procesada y usada para cualquier propósito por parte de el usuario. Cabe resaltar que una de las características mas importantes de la memoria es que puede almacenar la información de manera momentánea para uso inmediato (como es el caso de la memoria caché) o la puede tener almacenada durante largo periodo para que el usuario pueda acceder a dicha información en el momento que más lo necesite (como en el disco duro).  
+
+\section{Tipos de memoria}
+Aunque existen muchos tipos de memoria y cada una de ellas con diferentes funciones, las más conocidas y las más importantes para el funcionamiento del computador son:
+\begin{itemize}
+    \item \textbf{Memoria Caché:} esta es una memoria con poca capacidad de almacenamiento, pero su principal característica es la velocidad que le ofrece al microprocesador para poder acceder a la información con la que se necesita trabajar de manera inmediata. Este tipo de memoria se divide en los siguientes tres niveles organizados en orden de mayor velocidad:
+    \begin{itemize}
+        \item \textbf{L1:} es la memoria caché más rápida ya que se encuentra en los núcleos del procesador y trabaja a la misma velocidad que lo hace este, logrando así que el procesado de los datos se haga con mucha velocidad. Debido a su alto costo, este tipo de memoria no cuenta con mucho almacenamiento y es por eso que solo se usa para alojar la información que se usa inmediatamente y que puede ser eliminada después para liberar espacio.
+        
+        \item \textbf{L2:} al igual que la memoria L1 esta también se encuentra en los núcleos del procesador solo que no trabaja a la misma velocidad pero si cuenta con un poco mas de capacidad de almacenamiento. Esta memoria se usa cuando la memoria L1 ya alcanzó el tope de su almacenamiento y aún existen datos que se usaran con inmediatez que deben tenerse listos para su uso.
+        
+        \item \textbf{L3:} de los tres tipos es la más lenta pero la que más almacenamiento tiene (alrededor de 12 MB) y básicamente su uso está destinado al resto de información que no logró ser cargada en las memorias L1 y L2.
+    \end{itemize}
+    
+    \item \textbf{Memoria RAM: } dentro del nivel de jerarquía es la que prosigue a los tres tipos de memoria caché (L1,L2,L3) y se podría decir que es igual de importante. Su característica principal es que almacena datos que serán de utilidad para el procesador logrando evitar que tengan que ser buscados nuevamente en el disco duro y de esta manera se aumenta la velocidad con la que se trabaja. Al no ser muy costosa se ha logrado desarrollar módulos RAM con hasta 64 GB de almacenamiento lo que se traduce en la posibilidad de tener más información cargada y trabajar de forma más eficiente.
+    
+    \item \textbf{Memoria Virtual: } esta es una porción de disco duro que incluso se puede configurar de forma manual que se usa para alojar pedazos de programas que se están usando y que no son sumamente relevantes para el correcto funcionamiento del mismo pero que pueden ser requeridos en algún momento y deben tenerse a disposición para aumentar la velocidad del procesado de la información con la que trabaja el programa en cuestión.
+    
+    \item \textbf{Disco Duro: } de todas las unidades de almacenamiento que puede tener el computador es esta la que mas capacidad de almacenamiento tiene (1 Tera normalmente). En el disco duro se almacena el sistema operativo y todos los componentes de software necesarios para el buen funcionamiento de este, además de programas propios del usuario y todos los archivos que se vayan acumulando a lo largo del tiempo. Es decir, su principal característica es el almacenamiento y no la velocidad ya que al depender de la frecuencia con la que giran sus discos la velocidad se ve disminuida, es por eso que se hace necesario tener memorias como las anteriormente mencionadas que se encarguen de agilizar la comunicación entre el procesador y los datos.
+\end{itemize}
+
+
+\section{¿Cómo se gestiona la memoria en un computador?} 
+La forma en la que el computador maneja o gestiona la memoria consiste en organizar las tareas por su importancia y la inmediatez con la que necesitan ser realizados. A partir de ese orden la maquina sabe que que para realizar dichas tareas se necesita cierta información o ciertos datos que están almacenados en alguna parte del disco duro y es ahí donde inicia el proceso. Después de encontrar todo lo necesario, el procesador se encarga de usar las otras unidades de almacenamiento (caché, memoria virtual, RAM) para distribuir los datos de tal manera que los mas usados o los mas necesarios serán alojados en las unidades de memoria caché y en la memoria RAM para tener acceso rápido a ellos y agilizar tareas, el resto de información no tan imprescindible se deja en la memoria virtual o en el disco duro. Cabe resaltar que toda la información alojada en la RAM, la memoria caché y en la memoria virtual es volátil, es decir, luego de terminar con una tarea o proceso, los datos son borrados de estas unidades con el fin de liberar espacio para futuras tareas.
+
+\section{¿Qué hace una memoria mas rápida que otra?}
+
+El principal factor involucrado en la velocidad de la memoria es la latencia. La latencia es el tiempo transcurrido desde que la memoria recibe una instrucción y esta es ejecutada. Esto nos dice que el objetivo es tener la latencia mas baja posible para poder acceder a los datos más rápido, una manera de lograrlo es poner memorias que puedan trabajar a la velocidad del procesador logrando así una comunicación más eficiente como es el caso de la memoria caché L1 y L2 las cuales se encuentran en los núcleos del procesador consiguiendo de esta manera tener un intercambio de información muy rápido y eficiente.  
+
+
+
+\end{document}
